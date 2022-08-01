@@ -1,0 +1,427 @@
+@import url('http://fonts.cdnfonts.com/css/my-puma');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+/* home page css */
+.lead {
+   color: rgb(4, 4, 4);
+   font-size: 25px;
+   font-family: 'Playfair Display', serif;
+}
+
+.btn1,
+.btn2,
+.btn3 {
+   border: 1px solid #568fb6;
+   background: none;
+   padding: 10px 20px;
+   font-size: 20px;
+   font-family: "montserrat";
+   cursor: pointer;
+   margin: 10px;
+   color: #568fb6;
+   transition: 0.8s;
+}
+
+.btn1:hover {
+   color: #fff;
+   border: 1px solid #fff;
+}
+
+.btn3:hover,
+.btn2:hover {
+   color: #fff;
+   background-color: #000000;
+   border: 1px solid #fff;
+}
+
+.btn1::before,
+.btn2::before {
+   content: "";
+   position: absolute;
+   left: 0;
+   width: 100%;
+   height: 0%;
+   background-image: linear-gradient(to left bottom, #32bbcd, #00cdb9, #54da8b, #a8df4e, #ffd700);
+   z-index: -1;
+   transition: 0.8s;
+   top: 0;
+   border-radius: 0 0 50% 50%;
+}
+
+.btn1:hover::before,
+.btn2:hover::before {
+   height: 220%;
+}
+
+.btn3 {
+   transition: all 0.5 ease-in;
+}
+
+
+.just {
+   background-color: #d7e3fc;
+}
+
+
+
+.hov1,
+.hov2,
+.hov3 {
+    position: relative;
+    background-color: #252839;
+    font-size: 3em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+
+.hov1::before,
+.hov2::before,
+.hov3::before {
+    content: attr(data-text);
+    position: absolute;
+    color: #fff;
+    width: 2.6rem;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.hov2::before {
+    width: 3.0rem;
+}
+
+.hov3::before {
+    width: 1.9rem;
+}
+
+.hov1:hover::before {
+    width: 10.4rem;
+    -webkit-text-stroke: 1px #fff;
+
+}
+
+.hov2:hover::before {
+    width: 14.2rem;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.hov3:hover::before {
+    width: 8.9rem;
+    -webkit-text-stroke: 1px #fff;
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    /* buttons */
+    .btn1,
+    .btn2,
+    .btn3 {
+        font-size: 18px;
+        margin: 7px;
+    }
+
+    .btn1:hover {
+        color: #fff;
+        background-color: #000000;
+        border: 1px solid #fff;
+    }
+
+    .btn1::before,
+    .btn2::before {
+        background-image: none;
+    }
+
+    .btn2,
+    .btn1 {
+        transition: all 0.5 ease-in;
+    }
+
+
+}
+
+
+
+
+
+ /* navbar css starts here */
+
+ .header{
+    background-image: linear-gradient(to right top, #32bbcd, #00cdb9, #54da8b, #a8df4e, #ffd700);    
+    background-size: 100% 100%;
+    color:white;
+ }
+ 
+ #company{
+    font-family: 'My Puma', sans-serif;
+    color:white;
+ }
+
+ .companyInfo{
+    margin-top:20px;
+ }
+
+ .headLogo{
+    width:50px;
+ }
+
+ .nav-link{
+    color:white;
+    text-decoration: none;
+    font-size: large;
+ }
+
+ .nav-link:hover{
+    color:white;
+    text-decoration: underline rgb(255, 0, 255);
+    text-underline-offset: 12px;
+ }
+ .nav-link:visited{
+    color:white;
+    text-decoration: underline rgb(255, 0, 255);
+    text-underline-offset: 12px;
+ }
+
+ #navbarNav{
+    margin-left: 30px;
+ }
+
+
+ .navbar-toggler:focus {
+    
+    outline: none!important;
+  }
+ /* navbar css end here */
+
+
+
+
+/* products page css starts here */
+.card{
+  
+   margin:1%;
+   margin-bottom:20px;
+  
+   border-radius:3%;
+   width:18rem;
+   
+}
+img{
+    border-radius: 3% 3% 0 0;
+}
+.priceClass{
+    color:#f31515cc;
+}
+.card-body .ratingClass span{
+    color:gold;
+    font-size: large;
+ 
+}
+
+.headfont {
+   font-family: 'Edu VIC WA NT Beginner', cursive;
+   font-size: 3.6rem;
+   font-weight: 500;
+}
+
+@media (min-width: 400px) and (max-width: 768px){
+       .card{
+        width:25rem;
+       }
+}
+
+.card:hover{
+    box-shadow: rgba(232, 237, 97) 0px 6px 12px -2px, rgba(232, 237, 97) 0px 3px 7px -3px;
+    transform:scale(1.02);
+    cursor:pointer;
+
+}
+
+/* products page css ends here */
+
+
+
+
+
+.Footer{
+  
+
+   background-image: linear-gradient(to left bottom, #32bbcd, #00cdb9, #54da8b, #a8df4e, #ffd700);
+
+   color:white;
+}
+
+.footerLinks{
+    color:rgb(245, 245, 245,0.6);
+  text-decoration: none;
+}
+.footerLinks:hover{
+    color:white;
+   
+}
+#pantherLogo{
+    font-family: 'My Puma', sans-serif;
+                                                
+}
+
+
+
+
+
+ 
+
+
+
+
+ 
+  /* FORM STUFF BEGINS HERE */
+
+
+
+ 
+  form{
+  
+   font-family: Rockwell, Georgia, serif;
+    max-width: 1000px;
+   width:90%;
+   margin: 0 auto;
+   border: 1px solid rgb(100, 162, 255);
+   background-color: white;
+   
+}
+
+#detailsheading{
+   background-color: rgb(142, 222, 209);
+   color: white;
+   text-align: center;
+   padding:6px;
+ }
+ 
+ /*clear-fix the parent of column because it collapsed!  */
+ form:after{
+   content:'';
+   display:block;
+   clear:both;
+ }
+ 
+  form{
+   font-size:110%
+ }
+ label{
+   display:block;
+   color:black;
+   margin:16px 0 3px;
+ }
+ fieldset label{
+   display:inline-block;
+   font-size:85%;
+   font-family:  Rockwell, Georgia, serif;
+ }
+ 
+ 
+ input[type=text],
+ input[type=email],
+ input[type=tel],
+ input[type=date],
+ textarea,
+ select{
+   width:100%;
+   padding:5px;
+   box-sizing:border-box;
+   background-color: rgb(142, 222, 209,0.1);
+   border: solid 1px tan;
+   font-family:'Lucida Console', monospace;
+ }
+ textarea{
+   resize: vertical;
+   min-height: 70px;
+ }
+ 
+ fieldset{
+   border:none;
+   margin:20px 0 ;
+   padding:10px 0;
+   border-bottom: 1px solid  rgb(142, 222, 209);
+ }
+
+ legend{
+   display:block;
+   padding:3px;
+   margin:3px;
+   font-size:110%;
+
+ }
+ 
+ /* BUTTONS */
+ input[type=submit]{
+   background-color:forestgreen;
+   color:white;
+   border:none;
+   padding: 6px 20px;
+   font-size:110%;
+   border-radius:10px;
+   font-family: Rockwell, georgia, serif;
+ }
+ /* Reset Button: minimize the appearance */
+ input[type=reset]{
+   background-color:transparent;
+   border:none;
+   text-decoration:underline;
+   cursor:pointer;
+   margin:20px 0;
+   color:olive;
+ }
+ 
+
+
+#form-container{
+ display:flex;
+ justify-content: space-around;
+}
+
+
+#popup {
+  
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   position:  center absolute;
+   justify-content: center;
+   align-items: center;
+  
+}
+ 
+#close {
+   position: absolute;
+   
+   font-weight: bold;
+   color: whitesmoke;
+   width: 30px;
+   height: 27px;
+   border-radius:50%;
+   border: none;
+  background-color:rgb(142, 222, 209) ;
+} 
+
+ /* form end here */
+
+
+  /* remove extra cart space */
+  #emptycart,#table,.headImagediv
+  {
+    --bs-gutter-x: 0;
+  }
+  .headImages
+  {
+   border-radius: 0;
+   padding-top: 0.5rem;
+  }
+
+.row{
+   --bs-gutter-x: 0;
+}
